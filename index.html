@@ -169,7 +169,7 @@ function calculate(){
 	xo = parseFloat(document.getElementById('xo').value,10);
 	h = parseFloat(document.getElementById('H').value,10);
 
-	discretizacion = linspace(0,tf,(tf/h)+1);
+	discretizacion = linspace(0,tf,parseInt(Math.ceil(tf/h),10)+1);
 	discretizacion.pop();
 
 	x = xo;
